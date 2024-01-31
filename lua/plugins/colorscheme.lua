@@ -6,6 +6,9 @@ return {
     opts = function()
       return {
         transparent_mode = true,
+        italic = {
+          strings = false,
+        },
       }
     end,
   },
