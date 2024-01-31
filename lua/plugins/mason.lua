@@ -8,6 +8,7 @@ return {
       "eslint-lsp",
       "prettierd",
       "quick-lint-js",
+      "angular-language-server",
     },
   },
 }
