@@ -8,6 +8,7 @@ return {
       "prettierd",
       "quick-lint-js",
       "angular-language-server",
+      "prisma-language-server",
     },
   },
 }
