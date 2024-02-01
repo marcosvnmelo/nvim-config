@@ -5,7 +5,6 @@ return {
       "stylua",
       "shellcheck",
       "shfmt",
-      "eslint-lsp",
       "prettierd",
       "quick-lint-js",
       "angular-language-server",
