@@ -2,3 +2,4 @@
 require("config.lazy")
 require("custom.lsp.angularls")
 require("custom.lsp.quick_lint_js")
+require("custom.plugins.notify")
