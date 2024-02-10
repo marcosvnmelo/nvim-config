@@ -5,3 +5,4 @@
 -- vim.opt.winbar = "%=%m %f"
 vim.opt.spelllang = { "en_us", "pt_br" }
 vim.opt.spell = true
+vim.opt.spelloptions = "camel"
