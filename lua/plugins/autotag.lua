@@ -1,6 +1,5 @@
 return {
   "windwp/nvim-ts-autotag",
-  enabled = false,
   ft = {
     "javascript",
     "javascriptreact",
