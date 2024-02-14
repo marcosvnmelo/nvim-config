@@ -6,3 +6,4 @@
 vim.opt.spelllang = { "en_us", "pt_br" }
 vim.opt.spell = true
 vim.opt.spelloptions = "camel"
+vim.opt.termguicolors = true
