@@ -2,15 +2,18 @@ return {
   { "catppuccin/nvim" },
   {
     "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    config = true,
+    opts = {
+      transparent_mode = true,
+      italic = {
+        strings = false,
+      },
+    },
+  },
 
-    opts = function()
-      return {
-        transparent_mode = true,
-        italic = {
-          strings = false,
-        },
-      }
-    end,
+  {
+    "sainnhe/gruvbox-material",
   },
 
   {

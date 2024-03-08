@@ -7,3 +7,5 @@ vim.opt.spelllang = { "en_us", "pt_br" }
 vim.opt.spell = true
 vim.opt.spelloptions = "camel"
 vim.opt.termguicolors = true
+
+vim.g.gruvbox_material_transparent_background = 1
