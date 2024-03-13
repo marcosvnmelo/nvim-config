@@ -3,3 +3,5 @@
 -- Add any additional keymaps here
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<M-h>", "<CMD>BufferLineMovePrev<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<M-l>", "<CMD>BufferLineMoveNext<CR>", { noremap = true, silent = true })
