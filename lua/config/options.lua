@@ -3,7 +3,7 @@
 -- Add any additional options here
 
 -- vim.opt.winbar = "%=%m %f"
-vim.opt.spelllang = { "en_us", "pt_br" }
+vim.opt.spelllang = { "en", "pt" }
 vim.opt.spell = true
 vim.opt.spelloptions = "camel"
 vim.opt.termguicolors = true
