@@ -4,7 +4,25 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     inlay_hints = {
-      enabled = false,
+      enabled = true,
+      exclude = { "typescript", "typescriptreact" },
+    },
+    servers = {
+      tailwindcss = {
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                { "cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+                { "cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)" },
+                { "cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]" },
+                { "tv\\(([^)]*)\\)", "{?\\s?[\\w].*:\\s*?[\"'`]([^\"'`]*).*?,?\\s?}?" },
+                { "([^\\s]*)ClassName", "([^\\s]*)" },
+              },
+            },
+          },
+        },
+      },
     },
     setup = {
       gopls = function(_, opts)
