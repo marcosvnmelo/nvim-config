@@ -3,3 +3,8 @@
 -- Add any additional autocmds here
 
 -- vim.cmd([[ autocmd BufRead,BufEnter *.component.html set filetype=angular ]])
+
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+  pattern = { "*.hl", "hypr*.conf" },
+  command = "setfiletype hyprlang",
+})
