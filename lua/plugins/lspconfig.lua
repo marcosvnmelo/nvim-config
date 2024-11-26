@@ -8,6 +8,7 @@ return {
       exclude = { "typescript", "typescriptreact" },
     },
     servers = {
+      cssls = {},
       hyprls = {},
       tailwindcss = {
         settings = {
