@@ -1,4 +1,4 @@
-local util = require("lspconfig.util")
+-- local util = require("lspconfig.util")
 
 return {
   "neovim/nvim-lspconfig",
@@ -9,6 +9,27 @@ return {
     },
     servers = {
       cssls = {},
+      gopls = {
+        -- root_dir = util.root_pattern("go.work", "go.mod"),
+        settings = {
+          gopls = {
+            completeUnimported = true,
+            usePlaceholders = true,
+            analyses = {
+              unreachable = true,
+            },
+            hints = {
+              assignVariableTypes = false,
+              compositeLiteralFields = false,
+              compositeLiteralTypes = false,
+              constantValues = false,
+              functionTypeParameters = false,
+              parameterNames = false,
+              rangeVariableTypes = false,
+            },
+          },
+        },
+      },
       hyprls = {},
       tailwindcss = {
         settings = {
@@ -25,11 +46,6 @@ return {
           },
         },
       },
-    },
-    setup = {
-      gopls = function(_, opts)
-        opts.root_dir = util.root_pattern("go.work", "go.mod")
-      end,
     },
   },
 }
