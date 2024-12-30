@@ -7,8 +7,6 @@
   "catppuccin": { "branch": "main", "commit": "f67b886d65a029f12ffa298701fb8f1efd89295d" },
   "clownshow.nvim": { "branch": "main", "commit": "d595246e0f5eaf0ba347a7edf2e999750ad3dc1e" },
   "conform.nvim": { "branch": "master", "commit": "9180320205d250429f0f80e073326c674e2a7149" },
-  "dressing.nvim": { "branch": "master", "commit": "3a45525bb182730fe462325c99395529308f431e" },
-  "flutter-tools.nvim": { "branch": "main", "commit": "a526c30f1941a7472509aaedda13758f943c968e" },
   "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },
   "fzf-lua": { "branch": "main", "commit": "b4153da4825f86c7dbc540c5fc238ccc8c24d75a" },
   "gitsigns.nvim": { "branch": "main", "commit": "5f808b5e4fef30bd8aca1b803b4e555da07fc412" },
