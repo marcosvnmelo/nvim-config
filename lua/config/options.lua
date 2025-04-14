@@ -3,10 +3,16 @@
 -- Add any additional options here
 
 -- vim.opt.winbar = "%=%m %f"
-vim.opt.spelllang = { "en", "pt" }
-vim.opt.spell = true
-vim.opt.spelloptions = "camel"
-vim.opt.termguicolors = true
-
-vim.g.gruvbox_material_transparent_background = 1
 vim.g.ai_cmp = false
+
+if vim.g.vscode == nil then
+  -- ordinary Neovim
+  vim.opt.spelllang = { "en", "pt" }
+  vim.opt.spell = true
+  vim.opt.spelloptions = "camel"
+  vim.opt.termguicolors = true
+
+  vim.g.gruvbox_material_transparent_background = 1
+else
+  -- VSCode extension
+end
