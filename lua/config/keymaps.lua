@@ -8,6 +8,12 @@ if vim.g.vscode == nil then
   vim.keymap.set("n", "<C-u>", "<C-u>zz")
   vim.keymap.set("n", "<M-h>", "<CMD>BufferLineMovePrev<CR>", { noremap = true, silent = true })
   vim.keymap.set("n", "<M-l>", "<CMD>BufferLineMoveNext<CR>", { noremap = true, silent = true })
+  vim.keymap.set("n", "<leader>gd", function()
+    Snacks.terminal("lazydocker")
+  end, { desc = "Lazydocker (Root Dir)" })
+  vim.keymap.set("n", "<leader>gD", function()
+    Snacks.terminal("lazydocker", { cwd = LazyVim.root() })
+  end, { desc = "Lazydocker (cwd)" })
 else
   local vscode = require("vscode")
   -- VSCode extension
