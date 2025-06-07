@@ -14,6 +14,7 @@ if vim.g.vscode == nil then
 
   vim.g.gruvbox_material_transparent_background = 1
   vim.g.lazyvim_prettier_needs_config = true
+  vim.g.marcosvnmelo_use_eslint_d = false
 else
   -- VSCode extension
 end
