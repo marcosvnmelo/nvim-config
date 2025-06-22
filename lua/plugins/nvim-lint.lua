@@ -80,6 +80,12 @@ return {
           end,
         },
       },
+      sqlfluff = {
+        args = {
+          "lint",
+          "--format=json",
+        },
+      },
     },
   },
 }
