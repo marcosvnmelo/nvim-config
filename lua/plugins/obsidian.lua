@@ -23,6 +23,7 @@ return {
   ---@module 'obsidian'
   ---@type obsidian.config.ClientOpts
   opts = {
+    ui = { enable = false },
     workspaces = {
       {
         name = "personal",
