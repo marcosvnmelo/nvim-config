@@ -34,5 +34,6 @@ return {
     },
     quickfile = { enabled = true },
     scroll = { enabled = false },
+    words = { enabled = true },
   },
 }
