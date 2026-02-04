@@ -1,13 +1,28 @@
 return {
   "johmsalas/text-case.nvim",
-  dependencies = { "nvim-telescope/telescope.nvim" },
+  dependencies = { "folke/snacks.nvim" },
   config = function()
     require("textcase").setup({})
-    require("telescope").load_extension("textcase")
   end,
   keys = {
     "ga", -- Default invocation prefix
-    { "ga.", "<cmd>TextCaseOpenTelescope<CR>", mode = { "n", "x" }, desc = "Telescope" },
+    {
+      "ga.",
+      function()
+        -- Require lua file using relative path
+        require("plugins.textcase.extensions.snacks").normal_mode()
+      end,
+      mode = { "n", "x" },
+      desc = "Text Case",
+    },
+    {
+      "ga.",
+      function()
+        require("plugins.textcase.extensions.snacks").visual_mode()
+      end,
+      mode = { "v" },
+      desc = "Text Case",
+    },
   },
   cmd = {
     -- NOTE: The Subs command name can be customized via the option "substitude_command_name"
