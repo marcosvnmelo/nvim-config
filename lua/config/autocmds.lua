@@ -19,3 +19,10 @@ vim.api.nvim_create_autocmd("FileType", {
     })
   end,
 })
+
+-- Eslint fix before saving
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*.js", "*.jsx", "*.ts", "*.tsx", "*.vue" },
+  group = vim.api.nvim_create_augroup("EslintAutoFix", { clear = true }),
+  command = "LspEslintFixAll",
+})
