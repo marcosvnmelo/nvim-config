@@ -46,6 +46,15 @@ return {
           },
         },
       },
+      vtsls = {
+        settings = {
+          typescript = {
+            preferences = {
+              includePackageJsonAutoImports = "off",
+            },
+          },
+        },
+      },
     },
   },
 }
