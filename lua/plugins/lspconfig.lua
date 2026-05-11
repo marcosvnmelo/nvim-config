@@ -31,6 +31,7 @@ return {
         },
       },
       hyprls = {},
+      nxls = {},
       tailwindcss = {
         settings = {
           tailwindCSS = {
