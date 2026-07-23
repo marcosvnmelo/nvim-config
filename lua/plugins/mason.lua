@@ -1,4 +1,11 @@
 return {
   "mason-org/mason.nvim",
-  opts = { ensure_installed = { "nxls" } },
+  lazy = true,
+  opts = {
+    registries = {
+      "github:mason-org/mason-registry",
+      "github:Crashdummyy/mason-registry",
+    },
+    ensure_installed = { "nxls" },
+  },
 }
