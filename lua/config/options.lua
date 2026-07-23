@@ -16,6 +16,15 @@ if vim.g.vscode == nil then
   vim.g.lazyvim_prettier_needs_config = true
   -- vim.g.lazyvim_ts_lsp = "tsgo"
   vim.g.marcosvnmelo_use_eslint_d = false
+
+  vim.filetype.add({
+    filename = {
+      ["docker-compose.yml"] = "yaml.docker-compose",
+      ["docker-compose.yaml"] = "yaml.docker-compose",
+      ["compose.yml"] = "yaml.docker-compose",
+      ["compose.yaml"] = "yaml.docker-compose",
+    },
+  })
 else
   -- VSCode extension
 end

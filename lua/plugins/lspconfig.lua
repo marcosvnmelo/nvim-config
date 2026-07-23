@@ -9,6 +9,7 @@ return {
     },
     servers = {
       cssls = {},
+      docker_compose_language_service = {},
       gopls = {
         -- root_dir = util.root_pattern("go.work", "go.mod"),
         settings = {
